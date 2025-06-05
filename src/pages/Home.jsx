@@ -5,9 +5,11 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-neutral-50 py-20">
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 overflow-hidden to-blue-900 text-neutral-50 py-20">
+          <img className='absolute inset-0 w-full h-full object-cover' src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          <div className='w-screen h-full bg-blue-900/20 absolute inset-0'></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="relative text-center">
             <h1 className="font-viga text-4xl md:text-6xl font-bold mb-6">
               Welcome to <span className="text-blue-200">Atlas University</span>
             </h1>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import LogoLetter from '../assets/atlas-logo-letter.png'
+import LogoIcon from '../assets/atlas-logo.png'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,8 +18,9 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
-          <Link to="/" className="font-viga text-2xl md:text-3xl font-bold hover:text-blue-200 transition-colors">
-            Atlas University
+          <Link to="/" className="font-viga flex h-full gap-2 items-center text-2xl md:text-3xl font-bold hover:text-blue-200 transition-colors">
+            <img className='size-8 mt-1' src={LogoIcon} alt="" />
+            <img className='w-24' src={LogoLetter} alt="" />
           </Link>
           
           {/* Navigation */}
